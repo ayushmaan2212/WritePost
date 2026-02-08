@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white">
+
+      <!-- NAVBAR -->
+      <div class="w-full flex justify-between items-center px-10 py-6 border-b border-zinc-800">
+        <h2 class="text-xl font-semibold">PostWeb</h2>
+        <a class="bg-red-500 hover:bg-red-600 rounded-md px-4 py-2 text-sm" href="/logout">
+          Logout
+        </a>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="max-w-3xl mx-auto px-6 py-12">
+
+        <!-- HEADER -->
+        <div class="mb-6">
+          <h3 class="text-2xl mb-1">Edit your post</h3>
+          <p class="text-zinc-400 text-sm">
+            Make changes and update your post
+          </p>
+        </div>
+
+        <!-- EDIT FORM -->
+        <form method="post" action="/update/<%= post._id %>" class="space-y-4">
+          <textarea
+            name="content"
+            class="w-full min-h-[160px] p-4 outline-none bg-transparent border-2 border-zinc-800 rounded-lg focus:border-yellow-500 resize-none"
+            placeholder="What's on your mind?"
+          ><%= post.content %></textarea>
+
+          <div class="flex gap-3">
+            <input
+              type="submit"
+              value="Update post"
+              class="px-6 py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-400 cursor-pointer"
+            />
+
+            <a
+              href="/profile"
+              class="px-6 py-2 border border-zinc-700 rounded-md text-zinc-300 hover:bg-zinc-800"
+            >
+              Cancel
+            </a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

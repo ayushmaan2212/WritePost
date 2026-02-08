@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white flex items-center justify-center">
+      
+      <!-- Card -->
+      <div class="p-10 border border-zinc-800 rounded-lg w-full max-w-md">
+        <h3 class="text-3xl mb-6 text-center">Create Account</h3>
+
+        <form action="/register" method="post" class="flex flex-col">
+          <input class="px-3 py-2 mb-3 rounded-md bg-transparent border-2 border-zinc-800 focus:outline-none focus:border-blue-500" type="text" placeholder="Username" name="username">
+
+          <input class="px-3 py-2 mb-3 rounded-md bg-transparent border-2 border-zinc-800 focus:outline-none focus:border-blue-500" type="text" placeholder="Name" name="name">
+
+          <input class="px-3 py-2 mb-3 rounded-md bg-transparent border-2 border-zinc-800 focus:outline-none focus:border-blue-500" type="number" placeholder="Age" name="age">
+
+          <input class="px-3 py-2 mb-3 rounded-md bg-transparent border-2 border-zinc-800 focus:outline-none focus:border-blue-500" type="email" placeholder="Email" name="email">
+
+          <input class="px-3 py-2 mb-5 rounded-md bg-transparent border-2 border-zinc-800 focus:outline-none focus:border-blue-500" type="password" placeholder="Password" name="password">
+
+          <input class="px-5 py-2 rounded-md bg-blue-500 hover:bg-blue-600 cursor-pointer" type="submit" value="Register">
+        </form>
+        <!-- LOGIN OPTION -->
+        <p class="text-sm text-center mt-5 text-zinc-400">
+          Already have an account?
+          <a href="/login" class="text-blue-500 hover:underline">Login</a>
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
