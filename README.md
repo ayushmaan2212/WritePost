@@ -1,8 +1,8 @@
-# 🚀 Write-Post-
+# 🚀 WritePost
 
 ## 📖 Description
 
-Write-Post- is a basic social-style web application where users can register, log in, and create posts.
+WritePost is a basic social-style web application where users can register, log in, and create posts.
 
 Users can write posts, like posts, and delete their own posts.  
 This project was built to practice backend development, authentication, database integration, and UI styling using Tailwind CSS.
@@ -36,7 +36,7 @@ This project was built to practice backend development, authentication, database
 
 1. Clone the repository
 
-   git clone git@github.com:ayushmaan2212/Write-Post-.git
+   git clone git@github.com:ayushmaan2212/WritePost.git
 
 2. Navigate to the project folder
 
