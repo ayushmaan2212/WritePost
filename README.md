@@ -36,7 +36,7 @@ This project was built to practice backend development, authentication, database
 
 1. Clone the repository
 
-   git clone git@github.com:ayushmaan2212/WritePost.git
+   git clone https://github.com/ayushmaan2212/WritePost.git
 
 2. Navigate to the project folder
 
